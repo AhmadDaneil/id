@@ -21,7 +21,7 @@ class _CardState extends State<Card> {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: Text('ID Card'),
+        title:const Text('ID Card'),
         centerTitle: true,
         backgroundColor: Colors.grey[850],
         foregroundColor: Colors.white,
@@ -33,16 +33,16 @@ class _CardState extends State<Card> {
             level += 1;
           });
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         backgroundColor: Colors.grey[850],
         foregroundColor: Colors.white,
         ),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+        padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(
+            const Center(
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/download.jpeg'),
                 radius:40.0,
@@ -51,14 +51,14 @@ class _CardState extends State<Card> {
             Divider(height: 60.0,
             color: Colors.grey[800],
             ),
-            Text(
+            const Text(
               'Name',
               style: TextStyle(
                 color: Colors.grey,
                 letterSpacing: 2.0,
               )
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Text(
               'Chun-Li',
               style: TextStyle(
@@ -68,15 +68,15 @@ class _CardState extends State<Card> {
                 fontWeight: FontWeight.bold,
               )
             ),
-            SizedBox(height: 30.0),
-            Text(
+            const SizedBox(height: 30.0),
+            const Text(
               'Current level',
               style: TextStyle(
                 color: Colors.grey,
                 letterSpacing: 2.0,
               )
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Text(
               '$level',
               style: TextStyle(
@@ -86,14 +86,14 @@ class _CardState extends State<Card> {
                 fontWeight: FontWeight.bold,
               )
             ),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             Row(
               children: [
                 Icon(
                   Icons.email,
                   color: Colors.grey[400],
                 ),
-                SizedBox(width: 10.0),
+                const SizedBox(width: 10.0),
                 Text(
                   'chun.li@gmail.com',
                   style: TextStyle(
